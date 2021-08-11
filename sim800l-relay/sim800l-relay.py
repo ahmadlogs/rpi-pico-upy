@@ -127,6 +127,7 @@ def send_sms(msgtext):
 ########################################################################    
 print(send_command('AT'))
 print(send_command('AT+CMGF=1'))
+print(send_command('AT+CNMI=1'))
 #______________________________________________________
 #delete all sms from sim800l memory
 #print(send_command('AT+CMGD=1,4'))

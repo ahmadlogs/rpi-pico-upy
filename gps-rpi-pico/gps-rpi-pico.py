@@ -110,5 +110,11 @@ while True:
         
     if(TIMEOUT == True):
         print("Request Timeout: No GPS data is found.")
+        #--------------------------------------------------
+        #updated on 5-May-2022
+        oled.fill(0)
+        oled.text("No GPS data is found", 0, 0)
+        oled.show()
+        #--------------------------------------------------
         TIMEOUT = False
         
